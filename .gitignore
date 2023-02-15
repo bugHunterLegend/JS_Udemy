@@ -1,0 +1,12 @@
+# IntelliJ project files
+.idea
+*.csv
+*.iml
+
+# generated files
+Docs
+logs
+target
+
+# config files for specific machines
+node_modules
