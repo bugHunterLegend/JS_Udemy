@@ -10,10 +10,10 @@ module.exports = {
 		'ecmaVersion': 'latest'
 	},
 	'rules': {
-		'indent': [
-			'warn',
-			'tab'
-		],
+		// 'indent': [
+		// 	'warn',
+		// 	'tab'
+		// ],
 		'linebreak-style': [
 			'error',
 			'windows'
