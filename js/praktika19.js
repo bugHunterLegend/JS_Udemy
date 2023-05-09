@@ -21,3 +21,6 @@ personalMovieDB.movies[c] = d;
 
 
 console.log(personalMovieDB);
+
+
+console.log( 5 === 5 && 3 > 1 || 5);

@@ -167,3 +167,36 @@ thirdTask();
 // 	console.log('Not in this time');
 // 	break;
 // }
+
+
+
+const options = {
+	name: 'test',
+	width: 1024,
+	height: 1024,
+	colors: {
+		border: 'black',
+		bg: 'red'
+	}
+};
+
+console.log(Object.keys(options).length);
+console.log(Object.keys(options));
+options.forEach(function(keys, i, options){
+	console.log(keys);
+});
+
+
+const arr = [1,2,3,6,8,10];
+
+arr.forEach(function(item, i, arr){
+	console.log(`${i}: ${item} inside ${arr}`);
+});
+
+for (let i = 0; i < arr.length; i++) {
+	console.log(arr[i]);
+}
+
+for (let value of arr) {
+	console.log(value);
+}
