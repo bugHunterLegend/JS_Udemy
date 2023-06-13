@@ -1,25 +1,25 @@
-"use strict";
+'use strict';
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   const movieDB = {
     movies: [
-      "Logan",
-      "La La Land",
-      "Second Life",
-      "Untouchable",
-      "I am Legend",
+      'Logan',
+      'La La Land',
+      'Second Life',
+      'Untouchable',
+      'I am Legend',
     ],
   };
 
-  const adv = document.querySelectorAll(".promo__adv img"),
-    poster = document.querySelector(".promo__bg"),
-    genre = poster.querySelector(".promo__genre"),
-    movieList = document.querySelector(".promo__interactive-list"),
-    addForm = document.querySelector("form.add"),
-    addInput = document.querySelector(".adding__input"),
+  const adv = document.querySelectorAll('.promo__adv img'),
+    poster = document.querySelector('.promo__bg'),
+    genre = poster.querySelector('.promo__genre'),
+    movieList = document.querySelector('.promo__interactive-list'),
+    addForm = document.querySelector('form.add'),
+    addInput = document.querySelector('.adding__input'),
     checkbox = document.querySelector('[type="checkbox"]');
 
-  addForm.addEventListener("submit", (event) => {
+  addForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
     let newFilm = addInput.value;
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const makeChanges = () => {
-    genre.textContent = "dramatic movie";
+    genre.textContent = 'dramatic movie';
     poster.style.backgroundImage = 'url("img/bg.jpg")';
   };
 
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   function createMovieList(films, parent) {
-    parent.innerHTML = "";
+    parent.innerHTML = '';
 
     films.forEach((film, i) => {
       parent.innerHTML += `
